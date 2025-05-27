@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArcadeVerse</title>
+  <link rel="stylesheet" href="preview-style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="wpoefm.html">ArcadeVerse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Games</a>
+          <a class="nav-link" href="login.html">Login</a>
+          <a class="nav-link" href="about.html">About Us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="preview container">
+    <div class="left">
+      <img src="whack-a-mole.jpg" alt="Rock Paper Scissors Game Preview">
+      <button class="play">Play Now</button>
+    </div>
+    <div class="right">
+      <h2 class="h2">Intro</h2>
+      <h4>
+        "Whack-a-Mole" is a classic arcade game that tests players' reaction speed and hand-eye coordination.
+        The game involves striking moles that pop up randomly from holes before they disappear.
+      </h4>
+      <br><br>
+      <h2>Preview</h2>
+      <h4>
+        Whack-a-Mole is a game where players use a mallet (or a virtual tap) to hit moles that emerge from
+        different holes. The goal is to hit as many moles as possible within a time limit to score points.
+        The game gets progressively harder as the moles appear and disappear faster.
+      </h4>
+    </div>
+  </div>
+
+  <div class="container footer mt-5">
+    <div class="links">
+        <ul class="linkss">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Blog</a></li>
+        </ul>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/_shyam2005/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/_shyam2005/"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/KunalrajPatil"><i class="fab fa-github"></i></a>
+    </div>
+    <footer>Copyright © All Rights Reserved | Designed By Kunalraj 2025</footer>
+</div>
+
+  <script>
+    document.querySelector(".play").addEventListener("click", () => {
+      const isLoggedIn = localStorage.getItem("isloggedin");
+      if (isLoggedIn === "true") {
+        window.location.href = "./Whack A Mole/index.html";
+      } else {
+        localStorage.setItem("redirectToGame", "./Whack A Mole/index.html");
+        alert("Please log in to play the game!");
+        window.location.href = "login.html";
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.contact-content {
+    height: 408px;
+    /* background-color: blue; */
+    margin-top: 20px;
+    /* display: flex; */
+    /* padding: 10px; */
+    position: relative;
+    margin-bottom: 200px;
+}
+.max-width-1 h2{
+    margin-left: 20px;
+}
+.contact-content max-width-1 m-auto h2{
+    padding-top: 5px;
+    /* margin-left: 20px; */
+
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url('../img/BLOG.jpg');
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: inherit;
+    opacity: 0.29;
+    border-radius: 12px;
+    z-index: -1;
+}

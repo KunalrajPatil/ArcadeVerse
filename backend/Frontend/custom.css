@@ -1,0 +1,134 @@
+/* 
+
+/* Reset */
+* {
+    background-color: #0B090A;
+    box-sizing: border-box;
+  }
+  
+  /* General */
+  body {
+    background-color: #161A1D !important;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Navbar */
+  nav.navbar {
+    background-color: #0B090A !important;
+    padding: 0.75rem 1.25rem;
+  }
+  nav.navbar a {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #E5383B !important;
+    transition: 0.3s;
+  }
+  
+  /* Carousel */
+  .carousel {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .carousel-item img {
+    height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Section Title */
+  .text {
+    margin-top: 40px;
+    text-align: center;
+    color: #BA181B;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Game Cards */
+  .card {
+    background-color: #0B090A !important;
+    border: 1px solid #E5383B;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(229, 56, 59, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(229, 56, 59, 0.4);
+  }
+  .card-title {
+    color: #E5383B !important;
+    font-weight: bold;
+  }
+  .card-text {
+    color: #ffffffd1 !important;
+  }
+  .card .btn {
+    border-radius: 8px;
+    font-weight: 500;
+  }
+  .card .btn:hover {
+    background-color: #E5383B;
+    color: #0B090A;
+    border-color: #E5383B;
+  }
+  
+  /* Game Container */
+  .cont {
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  
+  /* Footer */
+  .footer {
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-top: 40px;
+    background-color: #0B090A;
+    text-align: center;
+    border-top: 1px solid #E5383B;
+  }
+  .linkss {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+  }
+  .linkss a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+  }
+  .linkss a:hover {
+    color: #E5383B;
+    transition: 0.3s;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+  .social-icons a:hover {
+    color: #E5383B;
+  }
+  
+  footer {
+    color: #ffffffaa;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
